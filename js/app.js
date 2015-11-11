@@ -1,3 +1,25 @@
+// Example JS Class
+// Classes build the objects
+
+var Car = function(loc) {
+  var obj = Object.create (Car.prototype);
+  obj.loc = loc;
+  return obj;
+};
+
+// Car.methods = {
+//   move: function() {
+//     this.loc++;
+//   }
+// }
+
+Car.prototype.move = function() {
+  this.loc++;
+};
+
+
+
+
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
